@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+nav a {
+  @apply px-5 py-2
+}
+
+nav a:hover {
+  @apply bg-black rounded-md
+}
+
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;

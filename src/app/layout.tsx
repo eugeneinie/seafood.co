@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Seafood Ecommerce',
   description: 'Enjoy delicious seafood',
+  keywords: 'lobsters, crabs, crayfish, shellfish, prawns'
 }
 
 export default function RootLayout({
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header/>
+        <div className="relative- -z-[1] top-[150px]">
           {children}
+        </div>
         <Footer/>
       </body>
     </html>

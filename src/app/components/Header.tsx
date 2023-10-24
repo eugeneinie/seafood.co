@@ -4,7 +4,7 @@ import LightDarkToggle from "./Light_Dark";
 
 export default function Header() {
   return (
-    <header>
+    <header className="fixed inset-x-0">
       <div className="flex items-center justify-center gap-x-3 space-x-2 bg-black h-[80px] text-white">
         <div>
         <BsSunFill /> <BsMoon /> 

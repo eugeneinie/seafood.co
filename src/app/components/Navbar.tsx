@@ -13,27 +13,27 @@ export default function Navbar() {
         </aside>
 
         <ul className='flex items-center justify-between capitalize gap-x-8'>
-            <Link href=''>
+            <Link href='/'>
               <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Home</button> </li>
             </Link>
 
-            <Link href=''>
+            <Link href='/about'>
               <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>About</button></li>
             </Link>
 
-            <Link href=''>
+            <Link href='/'>
               <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Shop</button></li>
             </Link>
 
-            <Link href=''>
+            <Link href='/'>
               <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Donate</button></li>
             </Link>
 
-            <Link href=''>
+            <Link href='/'>
               <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Contact</button></li>
             </Link>
 
-            <Link href=''>
+            <Link href='/'>
               <li>
                 <Carticon/>
               </li>

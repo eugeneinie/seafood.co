@@ -3,7 +3,7 @@ import styles from './components.module.css'
 export default function BannerTwo() {
   return (
     <section className={styles.bannerTwo}>
-      <section className='text-[#ffffff] w-[100%] p-[5em] text-right'>
+      <section className='text-[#ffffff] sm:w-[100%] w-4/5 sm:p-[5em] p-[3em] text-right'>
         <h2 className='text-[4em] font-sans'>How we're keeping your safe during COVID-19</h2>
         <p>As an outdoor shop, we've taken precautionary measures to ensure the safety of all our customers and team members.</p>
 
