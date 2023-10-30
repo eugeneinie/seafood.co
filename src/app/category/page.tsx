@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>
-      
+    <div className='hidden'> 
+      Page
     </div>
   )
 }
+// Why is it hidden?

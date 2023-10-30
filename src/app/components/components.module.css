@@ -1,5 +1,5 @@
 .bannerOne{
-    background-image: url(/images/shrimps.jpg);
+    background-image: url(/images/seafood.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .bannerTwo{
-    background-image: url(/images/shop.jpg);
+    background-image: url(/images/seafood_shop.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
     background-size: cover;

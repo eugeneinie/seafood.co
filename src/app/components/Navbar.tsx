@@ -1,43 +1,64 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Carticon from './Carticon'
 import Link from 'next/link'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import styles from './components.module.css'
 
 export default function Navbar() {
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(true);
+
+  // Function to toggle the mobile menu visibility
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
+  }
+
   return (
-    <nav className='bg-[#3498db] h-[80px] flex items-center justify-around text-white'>
+    <nav className='bg-[#3498db] sm:h-[80px] h-[300px] flex sm:items-center items-start justify-around text-white'>
       
-        <aside className='flex items-center gap-x-2'>
-            <Image src='/images/dbiTlogo_sticker.png' alt='logo' width={80} height={80}/>
+        <aside className='flex items-center gap-x-0'>            
+            <Image src='/images/dbiTlogo_sticker.png' alt='brand logo' width={80} height={80}/>            
+            <Link href={``}>
             <h3>Seafood.co</h3>
+            </Link>
         </aside>
 
-        <ul className='flex items-center justify-between capitalize gap-x-8'>
-            <Link href='/'>
-              <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Home</button> </li>
-            </Link>
+        <ul className='flex sm:flex-row flex-col items-center justify-between capitalize gap-x-8'>
+          <Link href='/contact' className='sm:hidden block' onClick={toggleMobileMenu}>
+            <li>
+              <GiHamburgerMenu/>
+            </li>
+          </Link>
 
-            <Link href='/about'>
-              <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>About</button></li>
-            </Link>
+          { mobileMenuVisible &&
+            <>
+              <Link href='/' className='sm:block'>
+                <li>Home </li>               
+              </Link> 
+                  
+              <Link href='/about' className='sm:block'>                
+                <li>About</li>
+              </Link>
 
-            <Link href='/'>
-              <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Shop</button></li>
-            </Link>
+              <Link href='/shop' className='sm:block'>                
+                <li>Shop</li>
+              </Link>            
 
-            <Link href='/'>
-              <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Donate</button></li>
-            </Link>
+              <Link href='/signin' className='sm:block'>                
+                <li>Sign-in</li>           
+              </Link>
 
-            <Link href='/'>
-              <li><button className='hover:bg-black hover:px-3  hover:py-1.5 rounded-md'>Contact</button></li>
-            </Link>
-
-            <Link href='/'>
-              <li>
+              <Link href='/contact' className='sm:block'>                
+                <li>Contact</li>          
+              </Link>
+                              
+              <Link href='/contact' className='sm:block'>                
+              <li className='sm:block'>
                 <Carticon/>
-              </li>
-            </Link>
+              </li>               
+              </Link>
+            </> }
         </ul>
     </nav>
   )

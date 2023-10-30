@@ -7,7 +7,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 
 export default function Footer() {
   return (
-      <footer className='h-[200px] bg-black text-white flex flex-col justify-center -bottom-80'>
+      <footer className='h-[150px] bg-[#3498db] text-white flex flex-col justify-center mt-[200px]'>
         <div className='flex justify-around items-center'>
                 <div className='flex items-center space-x-4'>
                     <Image src='/images/designbyinie.png' alt='logo' width={50} height={50}/>
@@ -15,12 +15,13 @@ export default function Footer() {
                 </div>
 
                 <div className='flex space-x-3 text-3xl'>
-                    <Link href=''>
-                        <AiFillGithub />
+
+                    <Link href='https://linkedin.com/iniubongisemin'>
+                        <BsLinkedin />
                     </Link>
 
                     <Link href=''>
-                        <BsLinkedin />
+                        <AiFillGithub />
                     </Link>
                     
                     <Link href=''>
@@ -28,10 +29,10 @@ export default function Footer() {
                     </Link>
                 </div>
         </div>
-        <div className=" text-center ">
+        <div className="text-center">
 
         <p>
-            Designed by <Link href=''>dbiTech</Link> &copy; {new Date().getFullYear()}
+            Designed by <Link href='/' className='text-slate-900 hover:underline'>dbiTech</Link> &copy; {new Date().getFullYear()}
         </p>
         </div>
        
