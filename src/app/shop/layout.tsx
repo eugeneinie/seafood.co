@@ -1,19 +1,17 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title: 'Shop | Seafood.co',
-    description: 'Enjoy delicious seafood',
-    keywords: 'lobsters, crabs, salmon, paella, crayfish, crawfish, shellfish, swordfish, oysters, prawns, shrimp, mussels, trout, tuna, clams, scallops, calamari, octopus, sashimi, paella'
-  }
+import React from 'react'
+import Category from '../components/Category'
 
 export default function layout({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <div>
-        {children}
+    <>
+    <div className='relative top-[40px] flex items-start mx-auto'>
+      <Category/>
+      {children}
     </div>
+    </>
   )
 }

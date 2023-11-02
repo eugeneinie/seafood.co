@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        <div className="relative -z-[1] top-[150px]">
+        <div className="relative top-[150px]">
           {children}
         </div>
         <Footer/>

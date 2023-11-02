@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
     title: 'Cart | Seafood.co',
     description: 'Enjoy delicious seafood',
-    keywords: 'lobsters, crabs, salmon, paella, crayfish, crawfish, shellfish, swordfish, oysters, prawns, shrimp, mussels, trout, tuna, clams, scallops, calamari, octopus, sashimi, paella'
+    keywords: 'seafood, lobsters, crabs, crayfish, crawfish, squids, squid-ink, snails, shellfish, fish, oysters, prawns, shrimp, trout, clams, scallops'
   }
 
 export default function layout({

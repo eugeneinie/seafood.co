@@ -1,5 +1,5 @@
 import React from 'react'
-import cate from './category.module.css'
+import cate from './components.module.css'
 import Link from 'next/link'
 
 export default function Category() {

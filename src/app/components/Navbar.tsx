@@ -13,10 +13,10 @@ export default function Navbar() {
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   }
-
+// bg-[#3498db]
   return (
-    <nav className='bg-[#3498db] sm:h-[80px] h-[300px] flex sm:items-center items-start justify-around text-white'>
-      
+    <nav className='bg-[#111] sm:h-[80px] h-[300px] flex sm:items-center items-start justify-around text-white'>
+
         <aside className='flex items-center gap-x-0'>            
             <Image src='/images/dbiTlogo_sticker.png' alt='brand logo' width={80} height={80}/>            
             <Link href={``}>
