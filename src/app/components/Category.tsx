@@ -1,10 +1,11 @@
 import React from 'react'
-import cate from './components.module.css'
+import cate from './category.module.css'
 import Link from 'next/link'
 
 export default function Category() {
   return (
     <aside className={cate.cat}>
+      <p className='font-bold px-[50px] pb-2'>Shop by category</p>
       <ul>
         <Link href='/category/crayfish'>
           <li>Crayfish</li>
@@ -47,7 +48,7 @@ export default function Category() {
         </Link>
 
         <Link href='/category/seafood_ink'>
-            <li>Seafood_ink</li>
+            <li>Seafood ink</li>
         </Link>        
       </ul>
     </aside>

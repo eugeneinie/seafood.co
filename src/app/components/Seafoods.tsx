@@ -10,7 +10,7 @@ type seafoodProps = {
     id: number,
     price: number
   }[]
-} //why the []?
+}; //why the []?
 
 export default function Seafood({products}:seafoodProps) {
     const seafoodCards = products.slice(0, 3)

@@ -1,0 +1,29 @@
+.cat{
+    padding-top: 5%;
+}
+
+.cat ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.cat a{
+    border-radius: 8px;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    width: 200px;
+    text-align: center;
+}
+
+.cat a:hover{
+    background-color: #fff;
+    color: #131024;
+}
+
+.cat a:focus {
+    background-color: #fff;
+    color: #fff;
+}
