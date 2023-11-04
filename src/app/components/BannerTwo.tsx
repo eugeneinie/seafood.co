@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function BannerTwo() {
   return (
     <section className={styles.bannerTwo}>
-      <section className='text-[#ccc] sm:w-[100%] w-4/5 sm:p-[5em] p-[3em] text-right'>
-        <h2 className='sm:text-[4em] text-6xl font-sans'>How we're serving you online and offline</h2>
+      <section className='text-[#3498db] sm:w-[100%] w-4/5 sm:p-[5em] p-[3em] text-right'>
+        <h2 className='sm:text-[4em] text-6xl font-sans'>How we're serving you <br /> online and offline</h2>
         <p className='sm:text-2xl text-xl font-sans'>As an online store, we've taken precautionary measures <br />
         to ensure the safety of all our customers and team members.</p>
         {/* <Link href={`/`}></Link> */}

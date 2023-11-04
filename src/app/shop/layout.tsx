@@ -22,7 +22,7 @@ export default function layout({
     <>
     <ShopHeader />
     <FeaturedItem />
-    <div className='relative top-[40px] flex items-start mx-auto'>
+    <div className='relative top-[40px] flex items-start mx-auto pt-[280px]'>
       <Category/>
       {children}
     </div>
