@@ -20,6 +20,12 @@
     height: 550px;
 }
 
+.help{
+    background-image: url(/images/seafood_shop.jpeg);
+    background-size: cover;
+    height: 600px;
+}
+
 .support h2 {
     text-transform: capitalize;
     font-weight: 700;
