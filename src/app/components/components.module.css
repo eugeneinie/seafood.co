@@ -60,6 +60,17 @@
     line-height: 1.5;
 }
 
+.choose h2 {    
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.choose p {    
+    font-size: .8em;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
 .para {
     font-size: small;
     padding: 10px 0;

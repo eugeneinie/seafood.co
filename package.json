@@ -14,14 +14,6 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0"
   },
-  "server": {
-    "react-icons": {
-      "FaShoppingCart": "react-icons/fa",
-      "BiMessage": "react-icons/bi",
-      "FiTruck": "react-icons/fi",
-      "RiVerifiedBadgeLine": "react-icons/ri"
-    }
-     },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",

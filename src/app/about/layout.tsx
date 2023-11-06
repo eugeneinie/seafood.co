@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AboutBanner from './AboutBanner'
 import Benefits from './Benefits'
+import AboutFounders from './AboutFounders'
 
 export const metadata: Metadata = {
     title: 'About | Seafood.co',
@@ -17,6 +18,7 @@ export default function layout({
     <div>
       <AboutBanner/>
       <Benefits/>
+      <AboutFounders/>
         {children}
     </div>
   )
