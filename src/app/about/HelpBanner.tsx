@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styles from '../components/components.module.css'
 
-export default function Help() {
+export default function HelpBanner() {
   return (
     <section className={styles.help}>
       <section className='text-[#fff] sm:w-[50%] sm:p-[5em]'>
