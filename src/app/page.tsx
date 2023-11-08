@@ -3,7 +3,7 @@ import BannerOne from './components/BannerOne'
 import BannerTwo from './components/BannerTwo'
 import Support from './components/Support'
 // import Shop from './components/Shop'
-import AboutSection from './components/AboutSection'
+import ShopOnline from './components/ShopOnline'
 import Seafoods from './components/Seafoods'
 
  export const seafoods = [
@@ -177,7 +177,7 @@ export default function Home() {
         <BannerTwo />
         <Seafoods products = {seafoods}/>
         {/* <Shop /> */}
-        <AboutSection />
+        <ShopOnline />
       </main>
     </>
   )
