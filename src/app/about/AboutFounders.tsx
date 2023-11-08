@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function AboutFounders() {
   return (
     <>
-    <div className="flex flex-row m-auto">
-      <div className='relative left-18 h-[1000px] w-[2000px] right-2 my-40 rounded-md bg-slate-900 text-left ml-[300px] pl-[200px] py-[80px] pr-[50px]'>
+    <div className="flex flex-row">
+      <div className='relative left-24 h-[1000px] w-[5000px] right-2 my-40 rounded-md bg-slate-900 text-left ml-[200px] pl-[200px] py-[80px] pr-[50px]'>
           <h2 className='font-bold text-3xl'>Meet our founders</h2>
         <p><br />
         John and Jane met on a backpacking adventure in Nepal. John, a former sheep shearer, went on the trip to get some clarity about his next adventures in life. Jane — a Peloton instructor — went on the trip to explore the landscape in Nepal. <br />
@@ -25,7 +25,7 @@ export default function AboutFounders() {
               alt='founders'
               width={40}
               height={80}
-              className='rounded-md relative h-[900px] w-[1200px]'
+              className='rounded-md relative h-[900px] w-[3000px] left-[100px]'
           />
       </div>
     </div>
