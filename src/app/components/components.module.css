@@ -77,6 +77,18 @@
     line-height: 1.5;
 }
 
+.foundersProfile h2{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.foundersProfile p{
+    font-size: .8em;
+    font-weight: 700;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
 .para {
     font-size: small;
     padding: 10px 0;

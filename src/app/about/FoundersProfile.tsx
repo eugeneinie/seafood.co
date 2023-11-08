@@ -1,26 +1,41 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from '../components/components.module.css'
+
+const foundersProfile = [
+{
+  id: 1,
+  name: 'Esther Isemin',
+  image: '/images/founders.jpg',
+  statement: 'Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Suspendisse varius enim in eros<br /> elementum tristique. Duis cursus, mi quis viverra<br /> ornare, eros dolor interdum nulla, ut commodo<br /> diam libero vitae erat. Aenean faucibus nibh et<br /> justo cursus id rutrum lorem imperdiet. Nunc ut<br /> sem vitae risus tristique posuere. <br />'
+},
+{
+  id: 2,
+  name: 'Ini-ubong Isemin',
+  image: '/images/founders.jpg',
+  statement: 'Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Suspendisse varius enim in eros<br /> elementum tristique. Duis cursus, mi quis viverra<br /> ornare, eros dolor interdum nulla, ut commodo<br /> diam libero vitae erat. Aenean faucibus nibh et<br /> justo cursus id rutrum lorem imperdiet. Nunc ut<br /> sem vitae risus tristique posuere. <br />'
+}
+]
+
+const foundersGrid = foundersProfile.map((grid) => (
+  <aside key={grid.id}>
+    <Image
+      src={grid.image}
+      alt={grid.name}
+      width={30}
+      height={30}
+    />
+    <h3>{grid.name}</h3>
+    <p>{grid.statement}</p>
+  </aside>
+))
 
 export default function FoundersProfile() {
   return (
     <>
-    <div className="flex flex-row gap-24">
-      <div className='relative left-18 h-[1000px] w-[2000px] right-2 my-40 rounded-md text-left ml-[300px] pl-[200px] py-[80px] pr-[50px]'>
-          <h2 className='font-bold text-3xl'>Meet our founders</h2>
-        <p><br />
-        John met on a backpacking adventure in Nepal. John, a former sheep shearer, went on the trip to get some clarity about his next adventures in life. Jane — a Peloton instructor — went on the trip to explore the landscape in Nepal. <br />
-        </p>
-      </div>
-      <div className="relative right-[800px] top-[50px] my-40">
-          <Image
-              src={`/images/founders.jpg`}
-              alt='founders'
-              width={40}
-              height={40}
-              className='rounded-full relative h-[120px] w-[450px]'
-          />
-      </div>
-    </div>    
+      <section className='flex flex-row sm: grid-cols-3 gap-[10px]'>
+        {foundersGrid}
+      </section>    
     </>
   )
 }
