@@ -20,7 +20,7 @@ export default function ShopOnline() {
 
         <p>Seafood.co</p><br /><br />
       </div>
-      <div className="relative right-[700px] top-[50px] my-40">
+      <div className="relative right-[900px] top-[50px] my-40">
           <Image
               src={`/images/houcine.jpg`}
               alt='buy seafood online'
