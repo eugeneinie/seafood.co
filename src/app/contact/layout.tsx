@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
     title: 'Contact | Seafood.co',
@@ -13,6 +14,7 @@ export default function layout({
   }) {
   return (
     <div>
+      <ContactForm />
         {children}
     </div>
   )
