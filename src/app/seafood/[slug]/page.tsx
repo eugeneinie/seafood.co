@@ -8,7 +8,7 @@ type paramsType = {
 
 type SeafoodProps = {
   name: string;
-  price: number;
+  price: number; 
   description: string[];
   type: string;
 }
@@ -38,10 +38,10 @@ export default function Page({params}:any) {
           <div className="flex gap-y-8 justify-start items-start">
             <input type="number" title="Quantity" name="number" id="number" min={1} className="border-4 border-[#e55] border-solid outline-none rounded-md p-2 w-[70px]" />
             <button className="hover:bg-[#e55] text-[#e55] hover:text-white py-3 px-5 ml-6 rounded-md border-2 hover:border-none">Add to cart</button>
+          </div>
         <h2 className="h-[200px] text-white bg-slate-950 text-4xl px-7 py-9">{seafoodIndex.name}</h2>
         <p>{seafoodIndex.price}</p>
       
-        </div>
         {seafoodIndex.description.map((desc, index) =>(
           <p key={index}>{desc}</p>
           ))}
