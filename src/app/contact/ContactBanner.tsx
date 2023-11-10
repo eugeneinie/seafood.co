@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../components/components.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 // const foundersProfile = [
 //   {
@@ -40,13 +42,40 @@ export default function ContactBanner() {
           <section className='relative top-10 text-[#fff] sm:w-[100%] sm:px-[2em] px-[2em]'>
             <h2 className='sm:text-4xl text-xl font-sans font-bold'>We&apos;d love to hear from you</h2>
           </section> 
-        <div className="flex flex-row relative gap-1">
+        <div className="flex flex-row relative gap-4">
           <div className="relative bg-white rounded-md h-[400px] w-[330px] top-[70px] left-5 ">
-            <aside className='text-center text-black relative my-1'>
+          <Image
+            src={`/images/chat.svg`}
+            alt={`chat icon`}
+            width={40}
+            height={40}
+            className='m-auto relative top-10 w-[50px] h-[50px]'
+          />
+            <aside className='text-center text-black relative top-[80px]'>
               <h2 className='font-bold text-2xl'>Contact Us</h2>
               <p>Just want to say hi? We'd love <br /> to hear from you. We love our <br /> customers and community!</p>
             </aside>
-            <button className='px-4 py-2 relative left-[100px] top-[300px] rounded-md bg-[#3498db] hover:bg-slate-950 hover:text-[#3498db] border-2 border-white border-solid font-semibold'>Shop Seafood</button>
+            <Link href={`/contact/contactform`}>
+              <button className='px-4 py-2 relative left-[75px] top-[100px] rounded-md bg-[#3498db] hover:bg-slate-950 hover:text-[#3498db] font-semibold'>Send Us A Message</button>
+            </Link>
+          </div>
+          <div className="relative bg-white rounded-md h-[400px] w-[330px] top-[70px] left-5 ">
+          <Image
+            src={`/images/chatwarning.png`}
+            alt={`chat icon`}
+            width={40}
+            height={40}
+            className='m-auto relative top-10 w-[55px] h-[55px]'
+          />
+            <aside className='text-center text-black relative top-[80px]'>
+              <h2 className='font-bold text-2xl'>Get Support</h2>
+              <p>
+              Have an issue with an order or <br /> with a product you purchased <br /> from us? Fill out our support <br />form.
+              </p>
+            </aside>
+            <Link href={`/contact/contactform`}>
+              <button className='px-4 py-2 relative left-[75px] top-[100px] rounded-md bg-[#3498db] hover:bg-slate-950 hover:text-[#3498db] font-semibold'>Send Us A Message</button>
+            </Link>
           </div>
         </div>
           {/* <section className='flex flex-row sm:grid-cols-3 gap-[10px] bg-white rounded-md h-[400px] w-[330px] top-[100px] left-5 '>

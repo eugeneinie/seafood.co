@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import ContactForm from './ContactForm'
+import ContactForm from './contactform/ContactForm'
 import ContactBanner from './ContactBanner'
 
 export const metadata: Metadata = {

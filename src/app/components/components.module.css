@@ -129,6 +129,10 @@
     margin-bottom: 1.75rem;
 }
 
+.formStyle {
+    margin-bottom: 300px;
+}
+
 .formStyle p{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -136,4 +140,5 @@
 
 .formStyle input{
     margin-bottom: 10px;
+    width: 700px;
 }

@@ -1,6 +1,6 @@
 "use client"
 import {useState} from 'react'
-import styles from '../components/components.module.css'
+import styles from '../../components/components.module.css'
 
 export default function ContactForm() {
     const  [inputValue, setInputValue] = useState('')
@@ -10,8 +10,8 @@ export default function ContactForm() {
     } 
   return (
     <>
-      <div className={`pt-[10px] ${styles.formStyle} flex flex-row`}>
-        <div className="m-auto">
+      <div className={`pt-[10px] ${styles.formStyle} flex flex-row gap-24`}>
+        <div className="relative left-4 top-20">
           <p className='text-3xl font-bold'>Contact Form</p>
           <p>General Inquiries: (+234)8179518958</p>
           <p>Customer Support: (+234)8101859094</p>
@@ -23,7 +23,7 @@ export default function ContactForm() {
             </p> 
           </address>
         </div>
-        <div className="">
+        <div className="relative top-20">
           <p className='text-3xl font-bold'>Contact Form</p>
           <p>Send us a message and we&apos;ll get back to you in no time!</p>
           <p>Name</p>
