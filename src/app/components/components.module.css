@@ -10,7 +10,9 @@
     background-image: url(/images/seafood_shop.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
-    background-size: cover;
+    background: no-repeat;
+    /* background: right; */
+    background-position-x: 50%;
     height: 500px;
 }
 
@@ -22,7 +24,7 @@
 
 .contactBanner{
     background-image: url(/images/frontdeskBanner.jpeg);
-    background-size: cover;
+    background-size: contain;
     height: 550px;
 }
 

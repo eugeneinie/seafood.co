@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../components/components.module.css'
 
-
 const benefits = [
     {
         id: 1,
