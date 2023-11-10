@@ -14,8 +14,14 @@
     height: 500px;
 }
 
-.aboutban{
+.aboutBan{
     background-image: url(/images/seafood_shop.jpeg);
+    background-size: cover;
+    height: 550px;
+}
+
+.contactBanner{
+    background-image: url(/images/frontdeskBanner.jpeg);
     background-size: cover;
     height: 550px;
 }
