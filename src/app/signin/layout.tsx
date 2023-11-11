@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SignInForm from '../contact/contactform/ContactForm'
 
 export const metadata: Metadata = {
     title: 'Sign-up | Seafood.co',
@@ -13,6 +14,7 @@ export default function layout({
   }) {
   return (
     <div>
+      <SignInForm />
         {children}
     </div>
   )

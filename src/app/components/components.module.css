@@ -10,13 +10,21 @@
     background-image: url(/images/seafood_shop.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
-    background-size: cover;
+    background: no-repeat;
+    /* background: right; */
+    background-position-x: 50%;
     height: 500px;
 }
 
-.aboutban{
+.aboutBan{
     background-image: url(/images/seafood_shop.jpeg);
     background-size: cover;
+    height: 550px;
+}
+
+.contactBanner{
+    background-image: url(/images/frontdeskBanner.jpeg);
+    background-size: contain;
     height: 550px;
 }
 
@@ -121,6 +129,10 @@
     margin-bottom: 1.75rem;
 }
 
+.formStyle {
+    margin-bottom: 300px;
+}
+
 .formStyle p{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -128,4 +140,5 @@
 
 .formStyle input{
     margin-bottom: 10px;
+    width: 700px;
 }
