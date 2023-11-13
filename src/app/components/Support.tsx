@@ -12,7 +12,7 @@ const support = [
     id: 2,
     title: 'sign up',
     image: '/images/designbyinie.png',
-    statement: 'Since we\'ve changed the way we operate to online only, signup to stay updated on our latest products and discounts.'
+    statement: 'Since we`&apos;`ve changed the way we operate to online only, signup to stay updated on our latest products and discounts.'
   },
   {
     id: 3,

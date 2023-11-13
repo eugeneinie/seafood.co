@@ -1,6 +1,6 @@
 "use client"
 import {useState} from 'react'
-import styles from '../../components/components.module.css'
+import styles from '../components/components.module.css'
 
 export default function ContactForm() {
     const  [inputValue, setInputValue] = useState('')
@@ -12,7 +12,7 @@ export default function ContactForm() {
     <>
       <div className={`pt-[10px] ${styles.formStyle} flex flex-row gap-24`}>
         <div className="relative left-4 top-20">
-          <p className='text-3xl font-bold'>Contact Form</p>
+          <p className='text-3xl font-bold'>For Enquiries</p>
           <p>General Inquiries: (+234)8179518958</p>
           <p>Customer Support: (+234)8101859094</p>
           <address>

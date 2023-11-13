@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import SignInForm from '../contact/contactform/ContactForm'
+import SignInForm from '../contact/ContactForm'
 
 export const metadata: Metadata = {
     title: 'Sign-up | Seafood.co',

@@ -24,8 +24,12 @@
 
 .contactBanner{
     background-image: url(/images/frontdeskBanner.jpeg);
-    background-size: contain;
+    background-size: 50%;
+    background-repeat: no-repeat;
     height: 550px;
+    position: relative;
+    left: 700px;
+    margin-bottom: auto;
 }
 
 .help{

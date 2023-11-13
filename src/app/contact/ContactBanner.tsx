@@ -57,7 +57,7 @@ export default function ContactBanner() {
               <h2 className='font-bold text-2xl'>Contact Us</h2>
               <p>Just want to say hi? We would love <br /> to hear from you. We love our <br /> customers and community!</p>
             </aside>
-            <Link href={`/contact/contactform`}>
+            <Link href={`/contact`}>
               <button className='px-4 py-2 relative left-[75px] top-[100px] rounded-md bg-[#3498db] hover:bg-slate-950 hover:text-[#3498db] font-semibold'>Send Us A Message</button>
             </Link>
           </div>
