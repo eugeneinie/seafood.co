@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Page from './../components/Page'
 
 export const metadata: Metadata = {
     title: 'Cart | Seafood.co',
@@ -12,7 +13,8 @@ export default function layout({
     children: React.ReactNode
   }) {
   return (
-    <div>
+    <div className=''>
+      <Page />
       {children}
     </div>
   )

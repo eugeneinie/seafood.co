@@ -1,8 +1,16 @@
+// "use client"
+// import React, { useState } from 'react'
 import Navbar from "./Navbar";
 import { BsSunFill, BsMoon } from 'react-icons/bs'
 import LightDarkToggle from "./Light_Dark";
 
 export default function Header() {
+  // const [BsSunFill, BsMoon] = useState(true);
+
+  // // Function to toggle the light and dark modes icon visibility
+  // const toggleLight_Dark = () => {
+  //   setMobileLight_Dark(!BsSunFill);
+  // }
   return (
     <header className="fixed z-10 inset-x-0">
       <div className="flex items-center justify-center gap-x-3 bg-black h-[80px] text-white"> 
