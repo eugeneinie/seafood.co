@@ -40,7 +40,7 @@ export default function ContactBanner() {
     <>
       <section className={styles.contactBanner}>
           <section className='relative top-10 text-[#fff] sm:w-[100%] sm:px-[2em] px-[2em]'>
-            <h2 className='sm:text-4xl text-xl font-sans font-bold'>We&apos;d love to hear from you</h2>
+            <h2 className='sm:text-4xl text-xl font-sans font-bold'>We would love to hear from you</h2>
           </section> 
         <div className="flex flex-row relative gap-4">
           <div className="relative bg-white rounded-md h-[400px] w-[330px] top-[70px] left-5 ">
@@ -70,7 +70,7 @@ export default function ContactBanner() {
             <aside className='text-center text-black relative top-[80px]'>
               <h2 className='font-bold text-2xl'>Get Support</h2>
               <p>
-              Have an issue with an order or <br /> with a product you purchased <br /> from us? Fill out our support <br />form.
+              Do you have an issue with an order or <br /> with a product you purchased <br /> from us? Fill out our support <br />form.
               </p>
             </aside>
             <Link href={`/contact/contactform`}>
