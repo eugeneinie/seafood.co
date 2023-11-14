@@ -41,10 +41,11 @@ export default function ContactBanner() {
   return (
     <>
       <section className={styles.contactBanner}>
-          <section className='relative top-10 text-[#fff] sm:w-[100%] sm:px-[2em] px-[2em]'>
+          <section className='flex flex-row
+           relative top-10 text-[#fff] sm:w-[100%] sm:px-[2em] px-[2em]'>
             <h2 className='sm:text-4xl text-xl font-sans font-bold'>We would love to hear from you</h2>
           </section> 
-        <div className="flex flex-row relative gap-4">
+        <div className="flex flex-row relative right-1 gap-4">
           <div className="relative bg-white rounded-md h-[400px] w-[330px] top-[70px] left-5 ">
           <Image
             src={`/images/chat.svg`}
@@ -75,9 +76,16 @@ export default function ContactBanner() {
               Do you have an issue with an order or <br /> with a product you purchased <br /> from us? Fill out our support <br />form.
               </p>
             </aside>
-            <Link href={`/contact/contactform`}>
+            <Link href={`/contact`}>
               <button className='px-4 py-2 relative left-[75px] top-[100px] rounded-md bg-[#3498db] hover:bg-slate-950 hover:text-[#3498db] font-semibold'>Send Us A Message</button>
             </Link>
+            <Image
+              src={`/images/frontdeskBanner.jpeg`}
+              alt='front desk officer'
+              height={40}
+              width={100}
+              className='relative left-[350px] h-[500px] w-3/4 bottom-[305px] -z-10'
+            />
           </div>
         </div>
           {/* <section className='flex flex-row sm:grid-cols-3 gap-[10px] bg-white rounded-md h-[400px] w-[330px] top-[100px] left-5 '>
