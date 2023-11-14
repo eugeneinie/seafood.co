@@ -24,12 +24,14 @@
 
 .contactBanner{
     /* background-image: url(/images/frontdeskBanner.jpeg); */
-    background-size: 50%;
+    background-size: 75%;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right;
     height: 100%;
+    /* top: 50%; */
     position: relative;
-    /* margin-bottom: 100px; */
+    margin-bottom: 80px;
+    background-blend-mode: darken
 }
 
 .help{

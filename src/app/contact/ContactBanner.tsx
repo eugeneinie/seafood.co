@@ -84,7 +84,7 @@ export default function ContactBanner() {
               alt='front desk officer'
               height={40}
               width={100}
-              className='relative left-[350px] h-[500px] w-3/4 bottom-[305px] -z-10'
+              className='relative left-[390px] h-[500px] w-[100%] bottom-[305px] -z-10'
             />
           </div>
         </div>
