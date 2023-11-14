@@ -1,11 +1,10 @@
-'use client'
 import React from 'react'
-import SignInForm from '../components/SignInForm'
+// import SignInForm from '../components/SignInForm'
 
 export default function page() {
   return (
     <div>
-      <SignInForm />
+      {/* <SignInForm /> */}
     </div>
   )
 }
