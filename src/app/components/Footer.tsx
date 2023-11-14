@@ -8,7 +8,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 //#3498db 
 export default function Footer() {
   return (
-      <footer className='h-[150px] bg-[#111] text-white flex flex-col justify-center mt-[200px]'>
+      <footer className='h-[150px] bg-[#3498db] text-white flex flex-col justify-center mt-[200px]'>
         <div className='flex justify-around items-center'>
                 <div className='flex items-center space-x-4'>
                     <Image src='/images/designbyinie.png' alt='logo' width={50} height={50}/>

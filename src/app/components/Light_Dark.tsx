@@ -1,10 +1,11 @@
+'use client'
 import React, { useState } from 'react'
 import { BsSunFill, BsMoon } from 'react-icons/bs'
 
 const LightDarkToggle = () => {
     const [theme, setTheme] = useState('light')
     
-    const toggleTheme = () => {
+    const toggleTheme = (theme:any) => {
         setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
     }
     return (

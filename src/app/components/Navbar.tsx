@@ -13,19 +13,19 @@ export default function Navbar() {
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   }
-// bg-[#3498db]
+// bg-[#3498db] sm:scale-y-150 md:h-[100vh]
   return (
-    <nav className='bg-[#3498db] sm:h-[100px] h-[230px] flex sm:items-center items-start justify-around text-white'>
+    <nav className='bg-[#3498db] h-[230px] md:h-[90px] sm:h-[80px] flex sm:items-center items-start justify-around text-white'>
 
         <aside className='flex items-center gap-x-0'>            
             <Image src='/images/dbiTlogo_sticker.png' alt='brand logo' width={80} height={80}/>            
             <Link href={`/`}>
-            <h3 className='relative right-[20px]'>Seafood.co</h3>
+            <h3>Seafood.co</h3>
             </Link>
         </aside>
 
-        <ul className='flex sm:flex md:flex md:flex-row sm:flex-row flex-col items-center justify-between capitalize gap-x-8'>
-          <Link href='/' className='sm:hidden block' onClick={toggleMobileMenu}>
+        <ul className='relative flex sm:flex md:flex md:flex-row flex-col items-center justify-between capitalize gap-x-8'>
+          <Link href='/' className='sm:hidden' onClick={toggleMobileMenu}>
             <li>
               <GiHamburgerMenu/>
             </li>
@@ -33,7 +33,7 @@ export default function Navbar() {
           
           { mobileMenuVisible &&
             <>
-              <Link href='/' className='sm:block'>
+              <Link href='/' className='sm:hidden block'>
                 <li>Home </li>               
               </Link> 
                   
@@ -52,14 +52,13 @@ export default function Navbar() {
               <Link href='/contact' className='sm:block'>                
                 <li>Contact</li>          
               </Link>
+
+              <Link href='/cart' className='sm:block'>                
+                <li>
+                  <Carticon />
+                </li>               
+              </Link>
             </> }
-
-          <Link href='/cart'>                
-            <li>
-              <Carticon />
-            </li>               
-          </Link>
-
         </ul>
     </nav>
   )
