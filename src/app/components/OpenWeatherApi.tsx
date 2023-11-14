@@ -24,7 +24,7 @@ const OpenWeatherApi = () => {
       .catch(error => {
         console.error('Error:', error);
       });
-  }, []);
+  }, [apiUrl]);
 
   if (!temperature || !description || !location) {
     return <div>Loading weather data...</div>;
