@@ -9,7 +9,7 @@ type paramsType = {
 type SeafoodProps = {
   name: string;
   price: number; 
-  description: string[];
+  description: string;
   type: string;
 }
 
@@ -42,9 +42,11 @@ export default function Page({params}:any) {
         <h2 className="h-[200px] text-white bg-slate-950 text-4xl px-7 py-9">{seafoodIndex.name}</h2>
         <p>{seafoodIndex.price}</p>
       
-        {seafoodIndex.description.map((desc:any, index:any) =>(
-          <p key={index}>{desc}</p>
-          ))}
+          <p>
+        {seafoodIndex.description}
+
+          </p>
+        
         </section>
       </section>
     </div>
