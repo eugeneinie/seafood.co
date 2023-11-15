@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { seafoods } from '../page'
+// import { seafoods } from '../page'
 
 // type seafoodProps = {
 //     products: {
@@ -33,7 +33,7 @@ export default function FeaturedItem(/*{products}:seafoodProps*/) {
   return (
     <>
     <div className='m-auto h-[60px]'>
-      <Link href={`/`}>
+      <Link href={`/category/crawfish`}>
       <Image
       src={`/images/crawfish.jpg`}
       alt='crawfish'
@@ -41,9 +41,9 @@ export default function FeaturedItem(/*{products}:seafoodProps*/) {
       height={320}
       className='rounded-md mx-auto mt-[80px] h-80'
       />
+        <button className='border rounded-md px-2 relative left-[] bg-white text-black bottom-72 py-1'>Featured Item</button>
       </Link>
-      <button className='border rounded-md px-2 relative left-[1075px] bg-white text-black bottom-72 py-1'>Featured Item</button>
-      <aside className='relative left-[200px] bottom-[120px]'>
+      <aside className='relative left-[200px] bottom-[120px] text-white'>
         <p className='text-2xl font-extrabold'>Crawfish</p>
         <p>&#8358;5200</p>
       </aside>
