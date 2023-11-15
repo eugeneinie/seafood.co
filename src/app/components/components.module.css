@@ -7,12 +7,11 @@
 }
 
 .bannerTwo{
-    background-image: url(/images/seafood.jpg);
+    background-image: url(/images/seafood_shop.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
-    background: no-repeat;
     /* background: right; */
-    background-position-x: 50%;
+    background-size: cover;
     height: 500px;
 }
 

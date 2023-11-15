@@ -17,15 +17,15 @@ export default function Footer() {
 
                 <div className='flex space-x-3 text-3xl'>
 
-                    <Link href='https://linkedin.com/iniubongisemin'>
+                    <Link href='https://linkedin.com/in/iniubongisemin'>
                         <BsLinkedin />
                     </Link>
 
-                    <Link href=''>
+                    <Link href='https://github.com/eugeneinie'>
                         <AiFillGithub />
                     </Link>
                     
-                    <Link href=''>
+                    <Link href='https://twitter.com/iniubongisemin'>
                         <RiTwitterXFill />
                     </Link>
                 </div>
@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="text-center">
 
         <p>
-            Designed by <Link href='/' className='text-slate-900 hover:underline'>dbiTech</Link> &copy; {new Date().getFullYear()}
+            Designed by <Link href='https://designbyinie.my.canva.site/' className='text-slate-900 hover:underline'>dbiTech</Link> &copy; {new Date().getFullYear()}
         </p>
         </div>
        

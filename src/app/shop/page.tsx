@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function page() {
   return (
-    <section className="w-[75%] m-auto py-8 flex flex-col gap-y-4">
+    <section className="w-[64%] relative m-0 px-0 left-[154px] py-8  flex flex-col gap-y-4">
       <aside className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4">
         {seafoods.map((seafood, index) => (
           <div key={index} className="text-center">

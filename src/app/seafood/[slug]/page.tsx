@@ -43,8 +43,7 @@ export default function Page({params}:any) {
         <p>{seafoodIndex.price}</p>
       
           <p>
-        {seafoodIndex.description}
-
+            {seafoodIndex.description}
           </p>
         
         </section>
