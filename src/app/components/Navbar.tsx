@@ -15,12 +15,12 @@ export default function Navbar() {
   }
 // bg-[#3498db] sm:scale-y-150 md:h-[100vh]
   return (
-    <nav className='bg-[#3498db] h-[230px] md:h-[90px] sm:h-[80px] flex sm:items-center items-start justify-around text-white'>
+    <nav className='bg-[#3498db] h-[230px] md:h-[90px] sm:h-[200px] flex sm:items-center items-start justify-around text-white'>
 
         <aside className='flex items-center gap-x-0'>            
-            <Image src='/images/dbiTlogo_sticker.png' alt='brand logo' width={80} height={80}/>            
+            <Image src='/images/logo.png' alt='brand logo' width={101} height={70} className='relative left-2 p-0 m-0'/>            
             <Link href={`/`}>
-            <h3>Seafood.co</h3>
+            <h3 className='relative'>Seafood.co</h3>
             </Link>
         </aside>
 

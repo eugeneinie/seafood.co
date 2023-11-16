@@ -13,7 +13,7 @@ export default function Header() {
   // }
   return (
     <header className="fixed z-10 inset-x-0">
-      <div className="flex items-center justify-center gap-x-3 bg-black h-[80px] text-white"> 
+      <div className="flex items-center justify-center gap-x-3 bg-slate-950 h-[80px] text-white"> 
       {/* space-x-2  */}
         <div>
         {/* <BsSunFill /> <BsMoon />  */}

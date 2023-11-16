@@ -2,7 +2,6 @@ import React from 'react'
 import BannerOne from './components/BannerOne'
 import BannerTwo from './components/BannerTwo'
 import Support from './components/Support'
-// import Shop from './components/Shop'
 import ShopOnline from './components/ShopOnline'
 import Seafoods from './components/Seafoods'
 
@@ -176,7 +175,6 @@ export default function Home({products}:seafoodProps) {
         <Support />
         <BannerTwo />
         <Seafoods products = {seafoods}/>
-        {/* <Shop /> */}
         <ShopOnline />
       </main>
     </>

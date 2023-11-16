@@ -40,7 +40,7 @@ export default function Seafoods({products}:seafoodProps) {
       
       {/* This button occurs outside the map loop in order to prevent the occurence of multiple buttons */}
         <Link href='/shop'>
-        <button className='text-center w-1/4 m-auto block bg-slate-900 hover:bg-[#3498db] text-white rounded-md p-3 mt-5'>
+        <button className='text-center w-1/4 m-auto block bg-slate-900 hover:bg-[#3498db] text-white rounded-md p-3 mt-5 '>
           <span>Checkout our seafood</span>
         </button>
         </Link>

@@ -13,12 +13,12 @@ export default function page() {
             </Link>
             <h2 className="capitalize">{seafood.name}</h2>
             <h2>&#8358;{seafood.price}</h2>
-            <Link href='/'>
+            <Link href='/details'>
               <button className="bg-[#3498db] rounded-md px-5 py-2 hover:bg-slate-950 hover:text-white">Details</button>
             </Link>
           </div>
         ))}
       </aside>      
     </section>
-  )
+  )       
 }
