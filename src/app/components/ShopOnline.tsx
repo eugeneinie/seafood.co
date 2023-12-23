@@ -3,30 +3,32 @@ import Image from "next/image"
 export default function ShopOnline() {
   return (
     <>
-    <div className="flex flex-row m-auto relative left-[100px]">
-      <div className='relative left-18 h-[1000px] w-[2000px] right-2 my-40 rounded-md bg-slate-900 text-left ml-[300px] pl-[200px] py-[80px] pr-[50px]'>
+    <div className="lg:flex lg:flex-row lg:m-auto md:relative lg:relative lg:w-[100%] md:w-[100%] sm:flex sm:flex-col sm:relative">
+      <div className='lg:relative lg:left-[500px] md:m-auto lg:h-[1000px] lg:w-[50%] md:w-[90%] lg:rounded-md md:rounded-md sm:w-[100px] sm:relative sm:px-0 sm:mx-0 bg-slate-900 sm:py-[80px]'>
+        
+        <aside className="lg:relative sm:relative text-white p-8 sm:p-2 m-0 lg:left-44 md:left-40 lg:w-[60%] md:w-[60%] sm:w-[30%]">
+          <h2 className='font-bold sm:text-2xl md:text-3xl lg:text-3xl lg:text-left sm:text-left'>Shop Online</h2><br />
+          <p>We know that after COVID-19, a lot of folks around the city and state are feeling uneasy about the future - you’re not alone.</p>  <br />
 
-        <h2 className='font-bold text-3xl'>Shop Online</h2><br />
+          <p>We are committed to making sure you enjoy gastronomic seafood experiences, and we’re going to keep doing just that - with our dedicated team.</p><br />
 
-        <p>We know that after COVID-19, a lot of folks around the city and state are feeling uneasy about the future - you’re not alone.</p>  <br />
+          <p>As long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on time.</p><br />
 
-        <p>We are committed to making sure you enjoy gastronomic seafood experiences, and we’re going to keep doing just that - with our dedicated team.</p><br />
+          <p>-------</p><br />
 
-        <p>As long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on time.</p><br />
+          <p>Esther & Ini-ubong Isemin</p><br />
 
-        <p>-------</p><br />
-
-        <p>Jane & John Doe</p><br />
-
-        <p>Seafood.co</p><br /><br />
+          <p>Seafood.co</p><br /><br />
+        </aside>
+        
       </div>
-      <div className="relative right-[900px] top-[50px] my-40">
+      <div className="lg:relative lg:top-24 lg:p-0 lg:m-0 sm:right-0 md:right-0">
           <Image
-              src={`/images/houcine.jpg`}
+              src={`/images/founders.png`}
               alt='buy seafood online'
-              width={40}
-              height={80}
-              className='rounded-md relative h-[900px] w-[2000px]'
+              width={500}
+              height={660}
+              className='lg:rounded-md lg:relative lg:h-[800px] lg:p-0 lg:m-auto lg:right-[800px] lg:w-[500px] md:rounded-md md:w-[300] md:h-[460] md:relative md:m-auto'
           />
       </div>
     </div>

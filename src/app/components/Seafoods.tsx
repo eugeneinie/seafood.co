@@ -12,8 +12,8 @@ type seafoodProps = {
   }[]
 }; //why the []?
 
-export default function Seafood({products}:seafoodProps) {
-    const seafoodCards = products.slice(0, 3)
+export default function Seafoods({products}:seafoodProps) {
+    const seafoodCards = products.slice(0, 3) 
   return (
     <section className='w-4/5 m-auto py-8 flex flex-col gap-y-4'>
       <h2 className='font-semibold'>Seafood products</h2>
@@ -40,7 +40,7 @@ export default function Seafood({products}:seafoodProps) {
       
       {/* This button occurs outside the map loop in order to prevent the occurence of multiple buttons */}
         <Link href='/shop'>
-        <button className='text-center w-1/4 m-auto block bg-slate-900 text-white rounded-md p-3 mt-5'>
+        <button className='text-center w-1/4 m-auto block bg-slate-900 hover:bg-[#3498db] text-white rounded-md p-3 mt-5 '>
           <span>Checkout our seafood</span>
         </button>
         </Link>

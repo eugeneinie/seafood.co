@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Category() {
   return (
     <aside className={cate.cat}>
-      <p className='font-bold px-[50px] pb-4'>Shop by category</p>
+      <p className='relative font-bold p-0 m-0 left-40 bottom-4'>Shop by category</p>
       <ul>
         <Link href='/category/crayfish'>
           <li>Crayfish</li>

@@ -4,20 +4,56 @@
     /* background-blend-mode: darken; */
     background-size: cover;
     height: 550px;
+    margin-top: 0px;
+}
+
+@media (min-width: 640px) {
+    .bannerOne{
+        background-image: url(/images/seafood.jpg);
+        /* background-color: rgb(red, green, blue); */
+        /* background-blend-mode: darken; */
+        background-size: cover;
+        height: 550px;
+        margin-top: 0px;
+    }
+
+    .bannerTwo{
+        background-image: url(/images/seafood_shop.jpg);
+        /* background-color: rgb(red, green, blue); */
+        /* background-blend-mode: darken; */
+        /* background: right; */
+        background-size: cover;
+        height: 550px;
+    }
+
 }
 
 .bannerTwo{
     background-image: url(/images/seafood_shop.jpg);
     /* background-color: rgb(red, green, blue); */
     /* background-blend-mode: darken; */
+    /* background: right; */
     background-size: cover;
     height: 500px;
 }
 
-.aboutban{
+.aboutBan{
     background-image: url(/images/seafood_shop.jpeg);
     background-size: cover;
     height: 550px;
+}
+
+.contactBanner{
+    background-image: url(/images/frontdeskBanner.jpeg);
+    background-size: 100%;
+    background-color: rgb(15 23 42);
+    background-repeat: no-repeat;
+    /* background-position: calc(); */
+    height: 550px;
+    /* top: 50%; */
+    position: relative;
+    margin-bottom: 80px;
+    background-blend-mode: overlay;
 }
 
 .help{
@@ -121,6 +157,10 @@
     margin-bottom: 1.75rem;
 }
 
+.formStyle {
+    margin: auto;
+}
+
 .formStyle p{
     padding-top: 5px;
     padding-bottom: 5px;
@@ -128,4 +168,5 @@
 
 .formStyle input{
     margin-bottom: 10px;
+    width: 700px;
 }

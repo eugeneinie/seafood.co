@@ -4,9 +4,7 @@ import Image from "next/image"
 
 export default function page() {
   return (
-    <section className="w-4/5 m-auto py-8 flex flex-col gap-y-4">
-      {/* <h2 className="font-semibold">Seafood products</h2>
-      <h3 className="text-5xl font-bold">Open 24 / 7 / 365</h3> */}
+    <section className="w-[64%] relative m-0 px-0 left-[184px] bottom-5 py-8 flex flex-col gap-y-4">
       <aside className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4">
         {seafoods.map((seafood, index) => (
           <div key={index} className="text-center">
@@ -15,12 +13,12 @@ export default function page() {
             </Link>
             <h2 className="capitalize">{seafood.name}</h2>
             <h2>&#8358;{seafood.price}</h2>
-            <Link href='/'>
+            <Link href='/details'>
               <button className="bg-[#3498db] rounded-md px-5 py-2 hover:bg-slate-950 hover:text-white">Details</button>
             </Link>
           </div>
         ))}
       </aside>      
     </section>
-  )
+  )       
 }

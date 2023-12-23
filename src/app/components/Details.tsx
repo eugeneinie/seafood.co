@@ -13,8 +13,8 @@ type SeafoodProps = {
   type: string;
 }
 
-export default function Page({params}:any) {
-  const seafoodIndex:SeafoodProps|undefined = seafoods.find(seafood => seafood.name === params.slug)
+export default function Details({params}:any) {
+  const seafoodIndex:SeafoodProps|undefined = seafoods.find(seafood => seafood.name === params)
 
   if (!seafoodIndex) {
     // This line deals with the error that comes up when seafoodIndex is undefined i.e display a message or redirect

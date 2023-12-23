@@ -1,11 +1,7 @@
-import React from 'react'
-import BannerOne from './components/BannerOne'
-import BannerTwo from './components/BannerTwo'
-import Support from './components/Support'
-import ShopOnline from './components/ShopOnline'
-import Seafoods from './components/Seafoods'
+'use client'
+import React, { useState, ChangeEvent } from 'react'
 
- export const seafoods = [
+const seafoods = [
     {
       name: "crayfish",
       type: "crayfish",
@@ -154,29 +150,40 @@ import Seafoods from './components/Seafoods'
       price: 9500
     }
   ];
-  
-type seafoodProps = {
-  products: {
-    name: string,
-    type: string,
-    description: string,
-    id: number,
-    price: number
-  }[]
-} 
 
-//&#8358; css:\20A6 => Naira symbol
+export default function Data() {
+    const [seafood, setSeafood] = useState('')
 
-export default function Home({products}:seafoodProps) {
+    const seafoodFilter = seafoods.filter(seaf => seaf.name.toLowerCase().includes(seafood.toLowerCase()) || seaf.description.toLowerCase().includes(seafood) || seaf.price)
+
+    const seafoodFilters = seafoodFilter.length === 0 ? (
+      <h2>Please fill in a valid product name</h2>
+    ) : 
+        seafoodFilter.map((seafoodArray, index) => (
+          <aside key={index} className='shadow-2xl rounded-md'>
+            <p>{seafoodArray.name}</p>
+            <p>{seafoodArray.description}</p>
+            <p>{seafoodArray.price}</p>
+          </aside>
+        ))
+
+        function onchange(event:ChangeEvent<HTMLInputElement>){
+          return setSeafood(event.target.value)
+        }
+
   return (
-    <>
-      <main className='min-h-screen'>
-        <BannerOne />
-        <Support />
-        <BannerTwo />
-        <Seafoods products = {seafoods}/>
-        <ShopOnline />
-      </main>
-    </>
+    <div>
+      <div>
+        <input type="text" name='text' id='text' placeholder='search seafood products' className='border-2 border-slate-900 border-solid text-black rounded-md p-2 m-6'
+        //defaultValue={`seafood`}
+        value={seafood}
+        onChange={onchange}
+        />
+      </div>
+      
+      <div className="grid grid-cols-3 gap-5">
+        {seafoodFilters}
+      </div>
+    </div>
   )
 }

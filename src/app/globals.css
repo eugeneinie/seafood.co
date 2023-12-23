@@ -10,7 +10,7 @@ nav a:hover {
   @apply bg-black rounded-md
 }
 
-:root {
+/* :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
@@ -32,4 +32,4 @@ nav a:hover {
         rgb(var(--background-end-rgb))
       )
       rgb(var(--background-start-rgb));
-  }
+  } */
