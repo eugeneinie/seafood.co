@@ -4,7 +4,7 @@ import Details from '../components/Details'
 export default function page() {
   return (
     <div>
-        <Details /> 
+        <Details params={''} slug={''} /> 
     </div>
   )
 }

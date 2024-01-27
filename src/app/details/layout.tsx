@@ -15,7 +15,7 @@ export default function layout({
 }) {
 return (
   <div>
-        <Details />
+        <Details params={''} slug={''} />
       {children}
   </div>
 )
